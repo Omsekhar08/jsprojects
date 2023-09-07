@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #ss{
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div id="nnn">
+            <input type="number" name="" id="nn">
+            <input type="button" value="SUBMIT" onclick="fun1()">
+            <div id="ss">
+
+            </div>
+        </div>
+    </form>
+</body>
+<script>
+    function fun1(){
+
+        let a=document.getElementById('nn')
+        let  b=document.createElement('div')
+        let k=document.getElementsById('ss')
+        k.appendChild(b)
+        b.style.height="100px"
+        b.style.width="100px"
+        b.style.backgroundColor="blue"
+
+    }
+</script>
+</html>

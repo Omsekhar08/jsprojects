@@ -1,0 +1,5 @@
+select EmpFname  as EmpName
+from EMPLOYEEINFO TABLE
+
+
+

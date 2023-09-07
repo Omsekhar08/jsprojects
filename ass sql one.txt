@@ -1,0 +1,26 @@
+create  table employees(
+id INT,
+name varchar2,
+salary INT) 
+
+insert into employees(id,'name',salary)
+vaules(1,'sangeetha',100000)
+
+insert into employees(id,'name',salary)
+vaules(2,'sangeetha',150000)
+
+insert into employees(id,'name',salary)
+vaules(3,'sangeetha',70000)
+
+insert into employees(id,'name',salary)
+vaules(4,'sangeetha',50000)
+
+insert into employees(id,'name',salary)
+vaules(5,'sangeetha',90000)
+
+
+
+
+select salary
+from employees
+where salary=max(salary-1)

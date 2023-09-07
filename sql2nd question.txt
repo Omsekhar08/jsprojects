@@ -1,0 +1,3 @@
+select *
+from EMPLOYEEINFO 
+where address=Delhi(DEL)

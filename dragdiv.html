@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body{
+            display: flex;
+            gap :100px;
+        }
+        .main1{
+            height: 300px;
+            width: 300px;
+            background-color: aqua;
+            display: flex;
+            gap: 10px;
+        }
+        .main2{
+            height: 300px;
+            width: 300px;
+            background-color: aqua;
+        }
+        .a{
+height: 60px;
+width: 60px;
+background-color: black;
+        }
+        .b,.c,.d,.e{
+            height: 60px;
+            width: 60px;  
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="body">
+
+        <div class="main1"onclick="fun1()" >
+            <div class="a" draggable="true"></div>
+            <div class="e" draggable="true"></div>
+            <div class="d" draggable="true"></div>
+            <div class="c" draggable="true"></div>
+            <div class="b" draggable="true"></div>
+            
+        </div>
+        <div class="main2"></div>
+    </div>
+    </body>
+    <script>
+        let a=document.getElementsByClassName('main1')[0]
+        let b=document.getElementsByClassName('main2')[0]
+        let c=document.createElement('div')
+        let h= document.appendChild(c)
+        element=inneHTML=a
+        let k=''
+        if(i in a){
+            i.addEventLisener("dragstart",function (e){
+               k= e.target;
+            })
+            b.addEventListener('dragover',function(e){
+                e.preventDefault();
+
+            })
+            b.addEventListener('drop',function(e){
+                b.appendChild(k)
+                k=null  
+            })
+        }
+    </script>
+</html>
